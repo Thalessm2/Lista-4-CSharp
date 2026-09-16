@@ -1,0 +1,19 @@
+class Program//define uma class chamada Program
+{
+    static void Main()// ponto de entrada do programa   
+    {
+        // Pergunte ao usuário se ele NÃO é um robô
+        Console.Write("Você NÃO é um robô? (sim/não): ");// Solicita ao usuário que informe se ele não é um robô
+        string resposta = Console.ReadLine().Trim().ToLower();// Lê a resposta do usuário, remove espaços em branco e converte para minúsculas
+
+        // Se a resposta for negativa ("não" ou "n")
+        if (resposta == "não" || resposta == "nao" || resposta == "n")
+        {
+            Console.WriteLine("Por favor, prove que você não é um robô");// Solicita ao usuário que prove que não é um robô
+        }
+        else
+        {
+            Console.WriteLine("Acesso permitido!");//exibe uma mensagem de acesso permitido
+        }
+    }
+}
