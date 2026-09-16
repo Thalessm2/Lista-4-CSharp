@@ -1,0 +1,18 @@
+class Program //define uma class chamada Program
+{
+    static void Main() //define uma função chamada Main, que é o ponto de entrada do programa
+    {
+        Console.WriteLine("Escreva a sua idade ");//exibe uma mensagem no console pedindo para o usuário digitar a idade
+        int idade = int.Parse(Console.ReadLine());// lê a idade digitada pelo usuário e converte para um número inteiro
+        Console.WriteLine("Você possui carteira de motorista");//exibe uma mensagem no console perguntando se o usuário possui carteira de motorista
+        bool possuiCarteira = Console.ReadLine().ToLower() == "sim";// lê a resposta do usuário e converte para minúsculas, verificando se é igual a "sim" e armazenando o resultado em uma variável booleana
+        if (idade >= 18 && possuiCarteira)// verifica se a idade é maior ou igual a 18 e se o usuário possui carteira de motorista
+        {
+            Console.WriteLine("Você pode dirigir.");//exibe uma mensagem no console informando que o usuário pode dirigir
+        }
+        else
+        {
+            Console.WriteLine("Você não pode dirigir.");//exibe uma mensagem no console informando que o usuário não pode dirigir
+        }
+    }
+}
