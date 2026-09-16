@@ -1,0 +1,20 @@
+class Program//define uma class chamada Program
+{
+    static void Main()// ponto de entrada do programa   
+    {
+        // Pergunta as preferências ao usuário
+        Console.Write("Deseja adicionar açúcar ao seu café? (s/n): ");//exibe a mensagem deseja adicionar acucar ao cafe
+        string acucar = Console.ReadLine().Trim().ToLower();// lê a resposta do usuário, remove espaços em branco e converte para minúsculas
+        Console.Write("Deseja adicionar leite ao seu café? (s/n): ");//exibe a mensagem deseja adicionar leite ao cafe
+        string leite = Console.ReadLine().Trim().ToLower();// lê a resposta do usuário, remove espaços em branco e converte para minúsculas
+        // Verifica se a resposta foi 's' para açúcar OU leite
+        if (acucar == "s" || leite == "s")// verifica se o usuário deseja adicionar açúcar ou leite
+        {
+            Console.WriteLine("Café com adicional preparado!");// exibe a mensagem café com adicional preparado
+        }
+        else// se a resposta foi 'n' para ambos, açúcar e leite
+        {
+            Console.WriteLine("Café puro preparado!");// exibe a mensagem café puro preparado
+        }
+    }
+}
