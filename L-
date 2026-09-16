@@ -1,0 +1,19 @@
+class Program//define uma class chamada Program
+{
+    static void Main()// ponto de entrada do programa   
+    {
+        // Solicita um número ao usuário
+        Console.Write("Digite um número: ");
+        double numero = double.Parse(Console.ReadLine());// Lê o número digitado pelo usuário e converte para double
+
+        // Verifica se o número NÃO é igual a zero
+        if (numero != 0)
+        {
+            Console.WriteLine("O número é diferente de zero");//exibe mensagem informando que o número é diferente de zero
+        }
+        else
+        {
+            Console.WriteLine("O número é igual a zero");//exibe mensagem informando que o número é igual a zero
+        }
+    }
+}
