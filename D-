@@ -1,0 +1,18 @@
+class Program //define uma class chamada Program
+{
+    static void Main() //define uma função chamada Main, que é o ponto de entrada do programa
+    {
+        Console.WriteLine("Você a assinante da Netflix? ");//exibe uma mensagem perguntando se o usuário é assinante da Netflix
+        bool assinante = Console.ReadLine().ToLower() == "sim"; //lê a resposta do usuário e converte para minúsculas, comparando com "sim"
+        Console.WriteLine("Você ja assistiu a serie O Gambito da Rainha ");//exibe uma mensagem perguntando se o usuário já assistiu a série O Gambito da Rainha
+        bool assistiu = Console.ReadLine().ToLower() == "sim"; //lê a resposta do usuário e converte para minúsculas, comparando com "sim"
+        if (assinante && assistiu)//verifica se o usuário é assinante e assistiu a série O Gambito da Rainha
+        {
+            Console.WriteLine("Ótimo agora você pode assistir à nova temporada!");//exibe uma mensagem informando que o usuário pode assistir à nova temporada
+        } 
+        else { Console.WriteLine("Você precisa ser assinante da Netflix e ter assistido a série O Gambito da Rainha para poder assistir à nova temporada.");//exibe uma mensagem informando que o usuário precisa ser assinante da Netflix e ter assistido a série O Gambito da Rainha para poder assistir à nova temporada
+
+        }
+
+    }
+}
