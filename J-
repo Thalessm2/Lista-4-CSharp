@@ -1,0 +1,19 @@
+class Program//define uma class chamada Program
+{
+    static void Main()// ponto de entrada do programa   
+    {
+        // Solicita um número inteiro ao usuário
+        Console.Write("Digite um número inteiro: ");//Exibe uma mensagem pedindo para o usuário digitar um número inteiro
+        int numero = int.Parse(Console.ReadLine());// Lê a entrada do usuário e converte para inteiro
+
+        // Verifica se o número é maior que 10 OU menor que 0
+        if (numero > 10 || numero < 0)
+        {
+            Console.WriteLine("Número inválido!");//Exibe uma mensagem informando que o número é inválido
+        }
+        else
+        {
+            Console.WriteLine("Número válido!");//Exibe uma mensagem informando que o número é válido
+        }
+    }
+}
