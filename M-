@@ -1,0 +1,19 @@
+class Program//define uma class chamada Program
+{
+    static void Main()// ponto de entrada do programa   
+    {
+        // Pergunta se o usuário NÃO é um membro inativo
+        Console.Write("Você NÃO é um membro inativo do clube? (sim/não): ");//exibe a pergunta Você NÃO é um membro inativo do clube? (sim/não):
+        string resposta = Console.ReadLine().Trim().ToLower();
+
+        // Se a resposta for negativa ("não" ou "n"), significa que ele É inativo
+        if (resposta == "não" || resposta == "nao" || resposta == "n")
+        {
+            Console.WriteLine("Por favor, atualize sua inscrição para continuar usufruindo dos benefícios do clube");//exibe a mensagem Por favor, atualize sua inscrição para continuar usufruindo dos benefícios do clube
+        }
+        else
+        {
+            Console.WriteLine("Acesso liberado! Aproveite os benefícios do clube.");//exibe a mensagem Acesso liberado! Aproveite os benefícios do clube.
+        }
+    }
+}
