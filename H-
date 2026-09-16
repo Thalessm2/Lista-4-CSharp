@@ -1,0 +1,18 @@
+class Program//define uma class chamada Program
+{
+    static void Main()// ponto de entrada do programa   
+    {
+        // Solicita a resposta do usuário
+        Console.Write("Deseja comprar o produto? (sim/não): ");// solicita ao usuário se deseja comprar o produto
+        string resposta = Console.ReadLine().Trim().ToLower();// lê a resposta do usuário, remove espaços em branco e converte para minúsculas
+        // Verifica se a resposta foi "sim" OU "s"
+        if (resposta == "sim" || resposta == "s")
+        {
+            Console.WriteLine("Obrigado pela compra!");// exibe uma mensagem de agradecimento pela compra
+        }
+        else
+        {
+            Console.WriteLine("Compra não realizada.");// exibe uma mensagem informando que a compra não foi realizada
+        }
+    }
+}
