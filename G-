@@ -1,0 +1,19 @@
+class Program//define uma class chamada Program
+{
+    static void Main()// ponto de entrada do programa   
+    {
+        // Solicita um número inteiro ao usuário
+        Console.Write("Digite um número inteiro: ");//Exibe uma mensagem pedindo para o usuário digitar um número inteiro
+        int numero = int.Parse(Console.ReadLine());// Lê a entrada do usuário e converte para inteiro
+
+        // O operador % calcula o resto da divisão. Se for igual a 0, é divisível.
+        if (numero % 3 == 0 || numero % 5 == 0)// Verifica se o número é divisível por 3 ou por 5
+        {
+            Console.WriteLine("O número é divisível por 3 ou por 5!");// Exibe uma mensagem informando que o número é divisível por 3 ou por 5
+        }
+        else// Se o número não for divisível por 3 nem por 5
+        {
+            Console.WriteLine("O número NÃO é divisível nem por 3 e nem por 5.");// Exibe uma mensagem informando que o número não é divisível nem por 3 e nem por 5
+        }
+    }
+}
