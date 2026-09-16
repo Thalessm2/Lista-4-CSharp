@@ -1,0 +1,19 @@
+class Program//define uma class chamada Program
+{
+    static void Main()// ponto de entrada do programa   
+    {
+        // Solicita o nome do usuário
+        Console.Write("Digite o seu nome: ");//exibe uma mensagem no console pedindo para o usuário digitar o nome
+        string nome = Console.ReadLine().Trim().ToLower();// Lê o nome do usuário, remove espaços em branco e converte para minúsculo
+
+        // Compara o nome convertido para minúsculo
+        if (nome == "wilson" || nome == "gloria")
+        {
+            Console.WriteLine("Olá, bem-vindo(a) de volta!");//exibe uma mensagem de boas-vindas personalizada para os usuários "wilson" e "gloria"
+        }
+        else
+        {
+            Console.WriteLine("Olá, bem-vindo(a)!");//exibe uma mensagem de boas-vindas genérica para outros usuários
+        }
+    }
+}
