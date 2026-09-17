@@ -1,0 +1,12 @@
+class Program//define uma classe chamada Program
+{
+    static void Main()//define o método Main, que é o ponto de entrada do programa
+    {
+        Console.Write("Você deseja cancelar a operação? (S/N): ");//exibe uma mensagem solicitando ao usuário que confirme se deseja cancelar a operação
+        string resposta = Console.ReadLine().ToUpper();//lê a resposta do usuário e converte para maiúsculas
+        if (resposta == "N")//verifica se a resposta do usuário é "N"
+        {
+            Console.WriteLine("Operação cancelada com sucesso!");//exibe uma mensagem informando que a operação foi cancelada com sucesso
+        }
+    }
+}
