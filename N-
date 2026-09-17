@@ -1,0 +1,17 @@
+class Program//define uma classe chamada Program
+{
+    static void Main()//define o método Main, que é o ponto de entrada do programa
+    {
+        Console.Write("Digite uma palavra: ");//exibe uma mensagem solicitando ao usuário que digite uma palavra
+        string palavra = Console.ReadLine();//lê a entrada do usuário e armazena na variável palavra
+
+        if (!string.IsNullOrWhiteSpace(palavra))//verifica se a palavra não é nula, vazia ou composta apenas por espaços em branco
+        {
+            Console.WriteLine("A palavra não é vazia");//exibe uma mensagem indicando que a palavra não é vazia
+        }
+        else
+        {
+            Console.WriteLine("A palavra está vazia");//exibe uma mensagem indicando que a palavra está vazia
+        }
+    }
+}
